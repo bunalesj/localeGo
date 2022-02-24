@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="bunalesj.msoe.final_project_restart.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/location_dashboard"
+        android:name="bunalesj.msoe.final_project_restart.ui.dashboard.LocationListFragment"
+        android:label="@string/location_label"
+        tools:layout="@layout/location_list_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/map_ui"
+        android:name="bunalesj.msoe.final_project_restart.ui.map.MapFragment"
+        android:label="@string/location_map"
+        tools:layout="@layout/map_ui" >
+    </fragment>
+</navigation>
